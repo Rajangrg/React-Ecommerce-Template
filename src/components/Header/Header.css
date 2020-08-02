@@ -1,0 +1,22 @@
+.header__companyName{
+    font-weight: bold ;
+    padding: 3px;
+    margin: 2px;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.header__leftItem{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    object-fit: contain;
+    width: 30px;   
+}
