@@ -34,7 +34,7 @@ function CheckoutProduct({ id, title, price, rating, imageUrl }) {
             <Button
               inverted
               className="checkoutProduct__button"
-              onClick={removeFromBasket}
+              onClick={removeFromBasket} 
             >
               REMOVE
             </Button>

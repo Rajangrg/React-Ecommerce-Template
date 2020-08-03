@@ -1,6 +1,9 @@
-.checkout{
+.checkout {
     margin: 10px 10px;
     padding-bottom: 15rem;
-    
 }
 
+.checkout__right{
+    padding-top: 30px;
+    padding-left: 25px;
+}
