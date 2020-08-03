@@ -5,12 +5,12 @@
     font-size: 1.2rem;
     color: #000;
 }
-
+/* 
 .header{
     top: 0;
     position: sticky;
     z-index: 1;
-}
+} */
 
 .header__leftItem{
     display: flex;

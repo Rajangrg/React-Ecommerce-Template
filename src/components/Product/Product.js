@@ -8,7 +8,6 @@ function Product({ id, title, price, rating, imageUrl }) {
       <Card className="product__card">
         <Image
           className="product__image"
-         
           centered
           src={imageUrl}
         />
@@ -25,6 +24,7 @@ function Product({ id, title, price, rating, imageUrl }) {
           <Button inverted className="product__button">
             ADD TO BASKET
           </Button>
+        
         </Card.Content>
       </Card>
     </div>

@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./container/Home/Home";
 import Login from "./container/Login/Login";
 import Checkout from "./container/Checkout/Checkout";
+import  Footer  from "./container/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" component={Login}></Route>
         <Route path="/checkout" component={Checkout}></Route>
       </Switch>
+      <Footer></Footer>
     </Router>
   );
 }

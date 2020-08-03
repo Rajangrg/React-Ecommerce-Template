@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../components/Product/Product";
 import { Container, Grid } from "semantic-ui-react";
+import './Home.css'
 
 function Home() {
   const [product, setProduct] = useState([]);
@@ -42,12 +43,30 @@ function Home() {
         imageUrl:
           "https://images-na.ssl-images-amazon.com/images/I/816FdtquvwL._SX425_.jpg",
       },
+      {
+        id: 5,
+        title:
+          "Audio-Technica AT-LP60XUSB-BK Fully Automatic Belt-Drive Stereo Turntable",
+        price: 129,
+        rating: 5,
+        imageUrl:
+          "https://images-na.ssl-images-amazon.com/images/I/71sSGRlNwKL._AC_SL1500_.jpg",
+      },
+      {
+        id: 6,
+        title: "Zen Mind, Beginner's Mind: Informal Talks on Zen Meditation and Practice",
+        price: 25,
+        rating: 5,
+        imageUrl:
+          "https://images-na.ssl-images-amazon.com/images/I/41Y-u0Q38sL._SX316_BO1,204,203,200_.jpg",
+      },
+      
     ]);
   }, []);
   console.log(product);
 
   return (
-    <div>
+    <div className="home">
       <Container>
         <Grid container columns={4} doubling stackable>
           {product.map((product) => {

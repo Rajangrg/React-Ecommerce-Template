@@ -1,6 +1,5 @@
 .product{
-    margin-top: 25px;
-    z-index: -1;
+    margin-top: 25px; 
 }
 
 .product__title{
@@ -30,4 +29,5 @@
 .product__card{
     height: 100%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+   
 }
