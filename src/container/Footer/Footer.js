@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Segment, Container, List, Divider, Image } from "semantic-ui-react";
+import { Container, List, Divider, Image } from "semantic-ui-react";
 import "./Footer.css";
 function Footer() {
   return (

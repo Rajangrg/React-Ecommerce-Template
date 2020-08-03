@@ -3,7 +3,8 @@
 }
 
 .product__title{
-    color: #7c64be !important
+    color: #7c64be !important;
+    font-weight: bold;
 }
 
 .product__image{
@@ -20,6 +21,8 @@
 .product__button{
     background-color: #8D86CC !important;
 }
+
+
 
 .product__price{
     font-weight: bold;
