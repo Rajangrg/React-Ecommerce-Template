@@ -13,7 +13,8 @@ import  Footer  from "./container/Footer/Footer";
 
 function App() {
   return (
-    <Router>
+    <div className="app">
+      <Router>
       <Header></Header>
       <Switch>
         <Route path="/" component={Home} exact></Route>
@@ -22,6 +23,7 @@ function App() {
       </Switch>
       <Footer></Footer>
     </Router>
+    </div>
   );
 }
 

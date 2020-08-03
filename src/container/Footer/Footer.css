@@ -4,10 +4,11 @@
     bottom: 0;
     width: 100%;
     background-color: #5243C3 !important; 
+    position: absolute;
+    
     
 }
 
 .footer__container{
    padding-bottom: 1rem;
- 
 }
