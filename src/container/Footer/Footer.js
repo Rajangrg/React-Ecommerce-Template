@@ -18,10 +18,10 @@ function Footer() {
             <List.Item as="a" href="https://github.com/Rajangrg">
               By Rajan Gurung
             </List.Item>
-            <List.Item as="a" href="#">
+            <List.Item as="a" href="https://github.com/Rajangrg/React-Ecommerce-Template">
               Source Code
             </List.Item>
-            <List.Item as="a" href="#">
+            <List.Item as="a" href="https://github.com/Rajangrg/React-Ecommerce-Template/blob/master/LICENSE">
               MIT License
             </List.Item>
           </List>

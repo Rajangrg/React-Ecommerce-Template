@@ -29,7 +29,7 @@ function Checkout() {
                     ) : (
                       <h2>Your shopping basket item </h2>
                     )}
-                    <Card fluid>
+                    <Card fluid className="checkout__card">
                       <Item.Group>
                         {basket?.map((item) => {
                           return (
