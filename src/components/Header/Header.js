@@ -3,8 +3,10 @@ import { Menu, Icon, Sticky } from "semantic-ui-react";
 
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../../StateProvider/StateProvider";
 
 function Header() {
+  const[{basket},] = useStateValue();
   return (
     <div className="header">
       <Sticky>
@@ -33,7 +35,7 @@ function Header() {
 
             <Link to="/checkout">
               <Menu.Item>
-                <Icon name="shop" /> 0
+                <Icon name="shop" /> {basket?.length}
               </Menu.Item>
             </Link>
           </Menu.Menu>

@@ -71,7 +71,7 @@ function Home() {
         <Grid container columns={4} doubling stackable>
           {product.map((product) => {
             return (
-              <Grid.Column stretched >
+              <Grid.Column stretched key={product.id}>
                 <Product
                   key={product.id}
                   title={product.title}
