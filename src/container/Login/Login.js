@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Container } from "semantic-ui-react";
 
 function Login() {
-    return (
-        <div>
-            <h1>login page</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Container>
+        <h1>coming soon..</h1>
+      </Container>
+    </div>
+  );
 }
 
-export default Login
+export default Login;

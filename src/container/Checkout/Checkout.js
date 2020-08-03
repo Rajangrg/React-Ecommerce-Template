@@ -11,7 +11,7 @@ function Checkout() {
     <div className="checkout">
       <Container>
         <Grid doubling stackable>
-          <Grid.Row >
+          <Grid.Row>
             <Grid.Column width={8}>
               <div>
                 {basket?.length === 0 ? (
