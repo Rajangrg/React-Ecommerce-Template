@@ -9,20 +9,20 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./container/Home/Home";
 import Login from "./container/Login/Login";
 import Checkout from "./container/Checkout/Checkout";
-import  Footer  from "./container/Footer/Footer";
+import Footer from "./container/Footer/Footer";
 
 function App() {
   return (
     <div className="app">
       <Router>
-      <Header></Header>
-      <Switch>
-        <Route path="/" component={Home} exact></Route>
-        <Route path="/login" component={Login}></Route>
-        <Route path="/checkout" component={Checkout}></Route>
-      </Switch>
-      <Footer></Footer>
-    </Router>
+        <Header></Header>
+        <Switch>
+          <Route path="/" component={Home} exact></Route>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/checkout" component={Checkout}></Route>
+        </Switch>
+        <Footer></Footer>
+      </Router>
     </div>
   );
 }

@@ -73,6 +73,7 @@ function Home() {
             return (
               <Grid.Column stretched key={product.id}>
                 <Product
+                id={product.id}
                   key={product.id}
                   title={product.title}
                   price={product.price}

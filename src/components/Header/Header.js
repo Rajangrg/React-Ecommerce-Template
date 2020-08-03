@@ -9,7 +9,7 @@ function Header() {
   const[{basket},] = useStateValue();
   return (
     <div className="header">
-      <Sticky>
+     
         <Menu stackable>
           <Menu.Menu position="left">
             <Menu.Item>
@@ -40,7 +40,7 @@ function Header() {
             </Link>
           </Menu.Menu>
         </Menu>
-      </Sticky>
+     
     </div>
   );
 }

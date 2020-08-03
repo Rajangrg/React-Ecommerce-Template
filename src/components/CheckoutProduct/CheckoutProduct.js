@@ -2,7 +2,17 @@ import React from "react";
 import { Item, Rating, Button, Divider } from "semantic-ui-react";
 import "./CheckoutProduct.css";
 
+import { useStateValue } from "../../StateProvider/StateProvider";
+
 function CheckoutProduct({ id, title, price, rating, imageUrl }) {
+  const [, dispatch] = useStateValue();
+  const removeFromBasket = () => {
+    dispatch({
+      type:'REMOVE_FROM_BASKET',
+      id
+    })
+  };
+
   return (
     <div>
       <Item className="checkoutProduct__item">
@@ -21,7 +31,11 @@ function CheckoutProduct({ id, title, price, rating, imageUrl }) {
             <span className="checkoutProduct__price">${price}</span>
           </Item.Description>
           <Item.Extra>
-            <Button inverted className="checkoutProduct__button">
+            <Button
+              inverted
+              className="checkoutProduct__button"
+              onClick={removeFromBasket}
+            >
               REMOVE
             </Button>
           </Item.Extra>
