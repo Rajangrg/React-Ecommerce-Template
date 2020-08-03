@@ -5,8 +5,8 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <Segment inverted>
-        <Container textAlign="center">
+      
+        <Container textAlign="center" className="footer__container">
           <Divider inverted section />
           <Image
             centered
@@ -26,7 +26,7 @@ function Footer() {
             </List.Item>
           </List>
         </Container>
-      </Segment>
+     
     </div>
   );
 }

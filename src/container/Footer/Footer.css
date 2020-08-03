@@ -3,8 +3,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-   
+    background-color: #5243C3 !important; 
+    
+}
 
-    
-    
+.footer__container{
+   padding-bottom: 1rem;
+ 
 }
