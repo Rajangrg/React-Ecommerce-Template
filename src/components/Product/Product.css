@@ -1,0 +1,33 @@
+.product{
+    margin-top: 25px;
+    z-index: -1;
+}
+
+.product__title{
+    color: #7c64be !important
+}
+
+.product__image{
+    margin: 13px;
+    height: 230px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+
+.product__footer{
+    text-align: center;
+}
+
+.product__button{
+    background-color: #5243c3 !important;
+}
+
+.product__price{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.product__card{
+    height: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
