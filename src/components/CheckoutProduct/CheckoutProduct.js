@@ -32,7 +32,7 @@ function CheckoutProduct({ id, title, price, rating, imageUrl }) {
           </Item.Description>
           <Item.Extra>
             <Button
-              inverted
+              color='red'
               className="checkoutProduct__button"
               onClick={removeFromBasket} 
             >

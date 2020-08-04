@@ -8,8 +8,7 @@
 }
 
 .checkoutProduct__button{
-    background-color: #FF0000 !important;
-    margin-top: 5px;
+    margin-top: 10px !important; 
 }
 
 .checkoutProduct__price{
