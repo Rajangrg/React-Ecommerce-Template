@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Product from "../../components/Product/Product";
-import { Container, Grid,Segment,Dimmer, Loader } from "semantic-ui-react";
+import { Container, Grid, Segment, Dimmer, Loader } from "semantic-ui-react";
 import "./Home.css";
 import { db } from "../../Firebase/FirebaseConfig";
 
@@ -21,7 +21,9 @@ function Home() {
       {loading ? (
         <Segment className="home__segment">
           <Dimmer active inverted>
-            <Loader size="large" className="home__loaderMessage">Loading...</Loader>
+            <Loader size="large" className="home__loaderMessage">
+              Loading...
+            </Loader>
           </Dimmer>
         </Segment>
       ) : (
