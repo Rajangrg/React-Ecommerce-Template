@@ -42,7 +42,7 @@ function Login() {
                   <label>E-mail</label>
                   <input
                     placeholder="First Name"
-                    text="email"
+                    type="email"
                     onChange={(event) => setEmail(event.target.value)}
                   />
                 </Form.Field>
@@ -50,7 +50,7 @@ function Login() {
                   <label>Password</label>
                   <input
                     placeholder="Last Name"
-                    text="password"
+                    type="password"
                     onChange={(event) => setPassword(event.target.value)}
                   />
                 </Form.Field>

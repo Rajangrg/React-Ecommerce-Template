@@ -4,9 +4,17 @@ import { Menu, Icon } from "semantic-ui-react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider/StateProvider";
+import { auth } from "../../Firebase/FirebaseConfig";
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+
+  const login = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
   return (
     <div className="header">
       <Menu stackable>
@@ -24,11 +32,20 @@ function Header() {
         </Menu.Menu>
 
         <Menu.Menu position="right">
-          <Link to="/login">
-            <Menu.Item name="signup">
-              <Icon name="sign-in" />
-              Sign in
-              {/* <Icon name="sign-out" /> Sign Out */}
+
+          <Link to={!user && "/login"}>
+            <Menu.Item>
+              {user ? (
+                <div onClick={login}>      
+                  <Icon name="sign-out" />
+                  Logout
+                </div>
+              ) : (
+                <>
+                  <Icon name="sign-in" />
+                  Sign in
+                </>
+              )}
             </Menu.Item>
           </Link>
 

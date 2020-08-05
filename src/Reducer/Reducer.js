@@ -18,13 +18,18 @@ export const InitialState = {
         "https://images-na.ssl-images-amazon.com/images/I/51724XHDqpL._AC_SL1000_.jpg",
     },
   ],
-  user: "",
+  user: null,
 };
 
 export const Reducer = (state, action) => {
   //console.log(action);
   //console.log(state)
   switch (action.type) {
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
     case "ADD_TO_BASKET":
       return {
         ...state, //return all the state
@@ -37,16 +42,15 @@ export const Reducer = (state, action) => {
       );
       //console.log(index)
       if (index >= 0) {
-        newBasket.splice(index, 1); 
-
+        newBasket.splice(index, 1);
       } else {
         console.error("no item found");
       }
-       return { ...state, basket: newBasket };
+      return { ...state, basket: newBasket };
     default:
       return state;
   }
 };
 
-export const getBasketTotal =(basket) =>
-  basket?.reduce((amount,item)=>item.price + amount, 0)
+export const getBasketTotal = (basket) =>
+  basket?.reduce((amount, item) => item.price + amount, 0);

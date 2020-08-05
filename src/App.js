@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 
 //component
@@ -10,8 +10,29 @@ import Home from "./container/Home/Home";
 import Login from "./container/Login/Login";
 import Checkout from "./container/Checkout/Checkout";
 import Footer from "./container/Footer/Footer";
+import { auth } from "./Firebase/FirebaseConfig";
+import { useStateValue } from "./StateProvider/StateProvider";
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        //user login in .
+        dispatch({ type: "SET_USER", user: authUser });
+      } else {
+        //user log out
+        dispatch({ type: "SET_USER", user: null });
+      }
+    });
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  console.log(user);
   return (
     <div className="app">
       <Router>
