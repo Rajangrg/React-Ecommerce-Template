@@ -30,13 +30,11 @@ function Header() {
             </Link>
           </Menu.Item>
         </Menu.Menu>
-
         <Menu.Menu position="right">
-
-          <Link to={!user && "/login"}>
+          <Link to="/login">
             <Menu.Item>
               {user ? (
-                <div onClick={login}>      
+                <div onClick={login}>
                   <Icon name="sign-out" />
                   Logout
                 </div>
@@ -48,7 +46,6 @@ function Header() {
               )}
             </Menu.Item>
           </Link>
-
           <Link to="/checkout">
             <Menu.Item>
               <Icon name="shop" /> {basket?.length}
