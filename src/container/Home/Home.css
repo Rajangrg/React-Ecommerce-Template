@@ -1,4 +1,11 @@
 .home{
    padding-bottom: 15rem;
-  
+}
+
+.home__segment{
+   height: 100vh;
+}
+
+.home__loaderMessage{
+   font-weight: bold;
 }
