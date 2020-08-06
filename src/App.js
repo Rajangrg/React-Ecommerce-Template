@@ -12,6 +12,7 @@ import Checkout from "./container/Checkout/Checkout";
 import Footer from "./container/Footer/Footer";
 import { auth } from "./Firebase/FirebaseConfig";
 import { useStateValue } from "./StateProvider/StateProvider";
+import UploadImage from "./container/UploadImage/UploadImage";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -38,6 +39,7 @@ function App() {
         <Header></Header>
         <Switch>
           <Route path="/" component={Home} exact></Route>
+          <Route path="/uploadImage" component={UploadImage}></Route>
           <Route path="/login" component={Login}></Route>
           <Route path="/checkout" component={Checkout}></Route>
         </Switch>
