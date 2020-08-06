@@ -1,7 +1,7 @@
 import React from "react";
 import { useStateValue } from "../../StateProvider/StateProvider";
 import CheckoutProduct from "../../components/CheckoutProduct/CheckoutProduct";
-import { Container, Item, Card, Grid } from "semantic-ui-react";
+import { Container, Item, Card, Grid, Message } from "semantic-ui-react";
 import "./Checkout.css";
 import SubTotal from "../../components/SubTotal/SubTotal";
 
@@ -15,12 +15,16 @@ function Checkout() {
             <Grid.Column width={8}>
               <div>
                 {basket?.length === 0 ? (
-                  <div>
-                    <h2>Your shopping basket is empty</h2>
-                    <p>
-                      You have no items in your basket. To buy one or more items
-                      , please click "Add to basket" next to the item
-                    </p>
+                  <div className="checkout__warningMessage">
+                    <Message warning>
+                      <Message.Header>
+                        Your shopping basket is empty
+                      </Message.Header>
+                      <p>
+                        You have no items in your basket. To buy one or more
+                        items , please click "Add to basket" next to the item
+                      </p>
+                    </Message>
                   </div>
                 ) : (
                   <div>
