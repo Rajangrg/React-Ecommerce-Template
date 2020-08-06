@@ -49,7 +49,7 @@ function Login() {
                 <Form.Field required>
                   <label>Password</label>
                   <input
-                    placeholder="Last Name"
+                    placeholder="password"
                     type="password"
                     onChange={(event) => setPassword(event.target.value)}
                   />
