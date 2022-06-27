@@ -4,5 +4,8 @@ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !im
 }
 
 .login{
-    margin-top: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
