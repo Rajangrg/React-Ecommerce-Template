@@ -15,8 +15,14 @@
 .header__leftItem{
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: aliceblue ;
 }
 .header__logo{
     object-fit: contain;
     width: 30px;   
+}
+.links{
+    text-decoration: none;
+    color: #000;
 }

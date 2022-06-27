@@ -125,7 +125,7 @@ function AddProduct() {
                   You must sign in to upload a product!
                 </Message.Header>
                 <p>
-                  Please visit <Link to="/login">sigin page</Link>, then try
+                  Please visit <Link to="/login">signin page</Link>, then try
                   again.
                 </p>
               </Message>

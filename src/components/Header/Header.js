@@ -31,31 +31,31 @@ function Header() {
           </Menu.Item>
         </Menu.Menu>
         <Menu.Menu position="right">
-          <Link to="/uploadImage">
             <Menu.Item>
-              <Icon name="upload" /> Add product
+            <Link to="/uploadImage" >
+                <Icon name="upload" className="links"/><span className="links">Add product</span>
+            </Link>
             </Menu.Item>
-          </Link>
-          <Link to="/checkout">
             <Menu.Item>
-              <Icon name="shop" /> {basket?.length}
+              <Link to="/checkout" >
+                  <Icon name="shop" className="links"/><span className="links">{basket?.length} </span> 
+              </Link>
             </Menu.Item>
-          </Link>
-          <Link to="/login">
             <Menu.Item>
+             <Link to="/login" >
               {user ? (
                 <div onClick={login}>
-                  <Icon name="sign-out" />
-                  Logout
+                  <Icon name="sign-out" className="links"/>
+                  <span className="links">Logout</span>
                 </div>
               ) : (
                 <>
-                  <Icon name="sign-in" />
-                  Sign in
+                  <Icon name="sign-in" className="links"/>
+                  <span className="links">Sign in</span>
                 </>
               )}
-            </Menu.Item>
-          </Link>
+           </Link>
+          </Menu.Item>
         </Menu.Menu>
       </Menu>
     </div>
